@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;800&display=swap");
 
 :root {
   --font-primary: "Be Vietnam Pro", sans-serif;
@@ -12,6 +12,7 @@
   --placeholder-text: hsl(0, 0%, 55%);
   --white: hsl(0, 0%, 100%);
   --shadow1: hsl(9, 68%, 56%);
+  --shadow2: hsl(9, 100%, 78%);
 }
 
 /* General Styles */
@@ -51,6 +52,15 @@ button {
   width: min(87.2%, 327px);
 }
 
+.paragraph {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: var(--dark-blue);
+  opacity: 0.5;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -60,6 +70,27 @@ button {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.btn-primary {
+  display: block;
+  background: var(--bright-red);
+  box-shadow: 0px 15px 15px -10px var(--shadow2);
+  border-radius: 22px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  color: var(--light-gray);
+  padding: 1.2rem 3.2rem 1.3rem;
+  width: fit-content;
+}
+
+.section-heading {
+  font-weight: 800;
+  line-height: 4.5rem;
+  text-align: center;
+  color: var(--dark-blue);
 }
 
 /* Header */
@@ -85,6 +116,119 @@ button {
   display: none;
 }
 
+/* Hero */
+
+.main-heading {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--dark-blue);
+}
+
+.hero .paragraph {
+  width: min(86.13333%, 323px);
+  margin: 0.9rem auto 0;
+}
+
+.hero .btn-primary {
+  margin: 2.9rem auto 0;
+}
+
+/* Different */
+
+.different {
+  margin-top: 9.3rem;
+}
+
+.different .section-heading {
+  width: min(88.53333%, 332px);
+  margin: 0 auto;
+  font-size: 3rem;
+  letter-spacing: -0.61875px;
+}
+
+.different .paragraph {
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: min(86.13333%, 323px);
+  margin: 1.3rem auto 0;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 4.7rem;
+  margin-top: 5.4rem;
+}
+
+.feature-heading {
+  margin-left: 1.6rem;
+  background: var(--very-pale-red);
+  border-radius: 39px 0px 0px 39px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.285714px;
+  color: var(--dark-blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-number {
+  background: var(--bright-red);
+  border-radius: 39px;
+  color: var(--white);
+  padding: 0.6rem 2.4rem 1rem 2.3rem;
+}
+
+.features .paragraph {
+  text-align: left;
+  margin: 0.8rem 0 0 1.6rem;
+}
+
+/* Testimonials */
+
+.testimonials {
+  margin-top: 6.2rem;
+}
+
+.testimonials .section-heading {
+  font-size: 3.2rem;
+  letter-spacing: -0.66px;
+}
+
+.testimonial {
+  background: var(--very-light-gray);
+  padding: 6rem 2.1rem 4.2rem;
+  width: min(90.66667%, 340px);
+  margin: 0 auto;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: center;
+  letter-spacing: -0.285714px;
+  color: var(--dark-blue);
+}
+
+.testimonial .paragraph {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.testimonials .btn-primary {
+  margin: 4.7rem auto 0;
+}
+
 /* Call To Action */
 
 .cta {
@@ -93,6 +237,7 @@ button {
   background-repeat: no-repeat;
   background-position: left;
   padding: 9.1rem 0;
+  margin-top: 4.2rem;
 }
 
 .cta-heading {
