@@ -29,6 +29,10 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-primary);
   font-weight: 400;
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
 
 img,
@@ -96,7 +100,7 @@ button {
 /* Header */
 
 .header .container {
-  margin: 4.1rem auto;
+  margin: 4.1rem auto 4.8rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -116,7 +120,22 @@ button {
   display: none;
 }
 
+/* Main */
+
+main {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top 364px center;
+  background-size: contain;
+}
+
 /* Hero */
+
+.intro-img {
+  max-width: 318px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .main-heading {
   font-weight: 700;
@@ -125,6 +144,7 @@ button {
   text-align: center;
   letter-spacing: -1px;
   color: var(--dark-blue);
+  margin-top: 1.9rem;
 }
 
 .hero .paragraph {
@@ -206,7 +226,7 @@ button {
 .testimonials-container {
   display: flex;
   position: relative;
-  min-height: 284px;
+  min-height: 248px;
   width: min(90.66667%, 340px);
   margin: 9.8rem auto 0;
 }
@@ -218,7 +238,7 @@ button {
   margin: 0 auto;
   position: absolute;
   opacity: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 
 .testimonial.active {
@@ -270,6 +290,27 @@ button {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.6rem;
+  margin-top: 1.9rem;
+}
+
+.indicator-container {
+  margin-top: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.indicator {
+  border: 1px solid var(--bright-red);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.indicator.active {
+  background: var(--bright-red);
 }
 
 .testimonials .btn-primary {
