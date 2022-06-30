@@ -203,11 +203,26 @@ button {
   letter-spacing: -0.66px;
 }
 
+.testimonials-container {
+  display: flex;
+  position: relative;
+  min-height: 284px;
+  width: min(90.66667%, 340px);
+  margin: 9.8rem auto 0;
+}
+
 .testimonial {
   background: var(--very-light-gray);
   padding: 6rem 2.1rem 4.2rem;
-  width: min(90.66667%, 340px);
+  width: 100%;
   margin: 0 auto;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.testimonial.active {
+  opacity: 1;
 }
 
 .testimonial-name {
@@ -217,6 +232,38 @@ button {
   text-align: center;
   letter-spacing: -0.285714px;
   color: var(--dark-blue);
+  position: relative;
+}
+
+.testimonial-name::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -9.6rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.testimonial:nth-of-type(1) .testimonial-name::before {
+  background-image: url("../images/avatar-anisha.png");
+}
+
+.testimonial:nth-of-type(2) .testimonial-name::before {
+  background-image: url("../images/avatar-ali.png");
+}
+
+.testimonial:nth-of-type(3) .testimonial-name::before {
+  background-image: url("../images/avatar-richard.png");
+}
+
+.testimonial:nth-of-type(4) .testimonial-name::before {
+  background-image: url("../images/avatar-shanai.png");
 }
 
 .testimonial .paragraph {
